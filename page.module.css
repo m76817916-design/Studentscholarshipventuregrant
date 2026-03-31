@@ -1,0 +1,256 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card h1 {
+  margin: 0 0 30px 0;
+  color: #333;
+  font-size: 28px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.formGroup input:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.fileSection {
+  margin: 30px 0;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.fileSection h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.fileHint {
+  margin: 0 0 15px 0;
+  color: #999;
+  font-size: 13px;
+}
+
+.fileUploadArea {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileUploadLabel {
+  display: block;
+  cursor: pointer;
+}
+
+.fileUploadContent {
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  background: #f9f9f9;
+}
+
+.fileUploadLabel:hover .fileUploadContent {
+  border-color: #667eea;
+  background: #f5f7ff;
+}
+
+.fileInput:focus + .fileUploadLabel .fileUploadContent {
+  border-color: #667eea;
+  background: #f5f7ff;
+}
+
+.uploadIcon {
+  display: block;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.uploadText {
+  display: block;
+  color: #666;
+  font-size: 14px;
+}
+
+.fileList {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.fileList h4 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.fileItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  border-left: 3px solid #667eea;
+}
+
+.fileInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fileName {
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.fileSize {
+  color: #999;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.removeFileBtn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: background 0.3s;
+  flex-shrink: 0;
+}
+
+.removeFileBtn:hover {
+  background: #ee5a52;
+}
+
+.removeFileBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.primaryBtn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 20px;
+}
+
+.primaryBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.primaryBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error {
+  background: #fee;
+  color: #c33;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c33;
+}
+
+.successCard {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.successCard h2 {
+  color: #28a745;
+  margin: 0 0 15px 0;
+  font-size: 24px;
+}
+
+.successCard p {
+  color: #666;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.id {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 4px;
+  font-family: monospace;
+  margin: 20px 0 !important;
+}
+
+.id strong {
+  color: #667eea;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #999;
+}
